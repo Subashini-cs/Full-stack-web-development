@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>button</title>
+        <style>
+            button {
+                background: blue;
+                color: white;
+                padding: 10px;
+                margin: 250px 600px;
+                box-shadow: 0 2px 5px black;
+                width: 100px;
+                height: 50px;
+            }
+            button:hover {
+                background: darkblue;
+                transform: scale(1.1);
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn">Click me</button>
+        <script>
+            const button = document.getElementById('btn');
+            button.addEventListener("click", function() {
+                console.log("button clicked!");
+                alert("Button clicked!"); // This will show an alert dialog as well
+            });
+        </script>
+    </body>
+</html>
